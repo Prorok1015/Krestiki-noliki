@@ -7,12 +7,13 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
-
+use yii\wiews\layouts\rightPanel;
 class GameController extends Controller
 {
+    public $layout = 'rightPanel';
+    
     public function actionGame(){
+       
         return $this->render('game');
     }
 }
